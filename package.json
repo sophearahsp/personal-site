@@ -2,7 +2,7 @@
   "name": "personal-site",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://sophearahsp.github.io",
+  "homepage": "https://sophearahsp.github.io/personal-site/",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
