@@ -11,8 +11,8 @@ const GameLabDesc = () => {
 			</div>
 			<div>
 				<p className="text-base font-medium text-gray-500">
-					{"Multiplayer co-op puzzle game that challenges players to maneuver asteroids through the environment using gravitational forces to sling themselves across the galaxy. Entry for the "}
-					<a href="https://montreal.ubisoft.com/en/our-commitments/education/game-lab-competition/">Ubisoft Game Lab Competition 2021</a>.
+					{"Multiplayer co-op puzzle game that challenges players to maneuver asteroids through space using gravitational forces to sling themselves across the galaxy. Entry for the "}
+					<a style={{textDecoration: 'underline'}} href="https://montreal.ubisoft.com/en/our-commitments/education/game-lab-competition/">Ubisoft Game Lab Competition 2021</a>.
 				</p>
 			</div>
 		</div>

@@ -11,8 +11,8 @@ const ApprenticeDesc = () => {
 			</div>
 			<div>
 				<p className="text-base font-medium text-gray-500">
-					{"LLM-assisted instructional writing platform targeting programming tutorials. Developing tool as a case study to analyze design guidelines for LLM and user interaction at the "}
-					<a href="https://www.cs.mcgill.ca/~jguo/lab.html">McGill Software Technology Lab</a>.
+					{"LLM-assisted instructional writing platform focused on programming tutorials. Developing tool as a case study to analyze design guidelines for LLM and user interaction at the "}
+					<a style={{textDecoration: 'underline'}} href="https://www.cs.mcgill.ca/~jguo/lab.html">McGill Software Technology Lab</a>.
 				</p>
 			</div>
 		</div>

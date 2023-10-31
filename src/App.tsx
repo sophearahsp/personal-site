@@ -1,40 +1,6 @@
 import {useRef} from 'react';
 import {ArrowDownIcon, ArrowUpIcon, GithubIcon, EmailIcon, LinkedinIcon} from './icons';
-import {ApprenticeDesc, GameLabDesc, MadaDesc} from './descriptions';
-
-const workData = [
-	{
-		title: "Inmo AI",
-		timeframe: "2023",
-		desc: "Long-form content generation platform emphasizing generation precision, flexibility, and accuracy to combat AI hallucinations which limit the use of LLMs in corporate settings."
-	},
-	{
-		title: "Cut Research",
-		timeframe: "2022",
-		desc: "Tool to streamline the research process for competitive debate, encompassing source searching, evidence extraction, and document creation for debate rounds."
-	},
-]
-
-const WorkDesc = (props: {title: string, timeframe: string, desc: string}) => {
-	const {title, timeframe, desc} = props
-	return (
-		<div className="grid grid-cols-2 py-4">
-			<div className="space-y-2">
-				<h1 className="text-2xl font-bold">
-					{title}
-				</h1>
-				<p className="text-base font-semibold text-gray-400 tracking-widest">
-					{timeframe}
-				</p>
-			</div>
-			<div>
-				<p className="text-base font-medium text-gray-500">
-					{desc}
-				</p>
-			</div>
-		</div>
-	)
-}
+import {ApprenticeDesc, CutResearchDesc, GameLabDesc, InmoDesc, MadaDesc} from './descriptions';
 
 export default function App() {
 	const refDown = useRef<HTMLDivElement>(null);
@@ -90,13 +56,8 @@ export default function App() {
 					<div className="flex flex-col space-y-4">
 						<ApprenticeDesc/>
 						<MadaDesc/>
-						{workData.map(work => 
-							<WorkDesc {...{
-								title: work.title,
-								timeframe: work.timeframe,
-								desc: work.desc
-							}}/>
-						)}
+						<InmoDesc/>
+						<CutResearchDesc/>
 						<GameLabDesc/>
 					</div>
 				</div>

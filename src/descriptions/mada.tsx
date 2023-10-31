@@ -12,7 +12,7 @@ const MadaDesc = () => {
 			<div>
 				<p className="text-base font-medium text-gray-500">
 					{"Platform facilitating management of local free meal delivery service for elderly and disabled individuals. Collaboration between "}
-					<a href="https://mcgill.hack4impact.org/">Hack4Impact McGill</a> and <a href="https://www.madacentre.com/">Mada Community Centre</a>.
+					<a style={{textDecoration: 'underline'}} href="https://mcgill.hack4impact.org/">Hack4Impact McGill</a> and <a style={{textDecoration: 'underline'}} href="https://www.madacentre.com/">Mada Community Centre</a>.
 				</p>
 			</div>
 		</div>
