@@ -11,8 +11,8 @@ const InmoDesc = () => {
 			</div>
 			<div>
 				<p className="text-base font-medium text-gray-500">
-					{"Long-form content generation platform emphasizing generation precision, flexibility, and accuracy to combat AI "}
-					<a style={{textDecoration: 'underline'}} href="https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)">hallucinations</a>
+					{"Long-form content generation platform emphasizing generation precision, flexibility, and accuracy to combat "}
+					<a style={{textDecoration: 'underline'}} href="https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)">AI hallucinations</a>
 					{" which limit the use of LLMs in corporate settings."}
 				</p>
 			</div>
