@@ -1,32 +1,18 @@
 import {useRef} from 'react';
 import {ArrowDownIcon, ArrowUpIcon, GithubIcon, EmailIcon, LinkedinIcon} from './icons';
+import {ApprenticeDesc, GameLabDesc, MadaDesc} from './descriptions';
 
 const workData = [
 	{
-		title: "Doc Writing Tool",
-		timeframe: "2023 - PRESENT",
-		desc: "Lorem ipsum dolor sit amet consectetur. Rhoncus massa cursus vulputate dignissim. Egestas augue gravida fusce nibh donec blandit. "
-	},
-	{
-		title: "MADA",
-		timeframe: "2022 - PRESENT",
-		desc: "Lorem ipsum dolor sit amet consectetur. Rhoncus massa cursus vulputate dignissim. Egestas augue gravida fusce nibh donec blandit. "
-	},
-	{
 		title: "Inmo AI",
 		timeframe: "2023",
-		desc: "Lorem ipsum dolor sit amet consectetur. Rhoncus massa cursus vulputate dignissim. Egestas augue gravida fusce nibh donec blandit. "
+		desc: "Long-form content generation platform emphasizing generation precision, flexibility, and accuracy to combat AI hallucinations which limit the use of LLMs in corporate settings."
 	},
 	{
 		title: "Cut Research",
 		timeframe: "2022",
-		desc: "Lorem ipsum dolor sit amet consectetur. Rhoncus massa cursus vulputate dignissim. Egestas augue gravida fusce nibh donec blandit. "
+		desc: "Tool to streamline the research process for competitive debate, encompassing source searching, evidence extraction, and document creation for debate rounds."
 	},
-	{
-		title: "Ubisoft Game Lab Competition",
-		timeframe: "2021",
-		desc: "Lorem ipsum dolor sit amet consectetur. Rhoncus massa cursus vulputate dignissim. Egestas augue gravida fusce nibh donec blandit. Lorem ipsum dolor sit amet consectetur. Rhoncus massa cursus vulputate dignissim."
-	}
 ]
 
 const WorkDesc = (props: {title: string, timeframe: string, desc: string}) => {
@@ -102,6 +88,8 @@ export default function App() {
 						</h1>
 					</div>
 					<div className="flex flex-col space-y-4">
+						<ApprenticeDesc/>
+						<MadaDesc/>
 						{workData.map(work => 
 							<WorkDesc {...{
 								title: work.title,
@@ -109,6 +97,7 @@ export default function App() {
 								desc: work.desc
 							}}/>
 						)}
+						<GameLabDesc/>
 					</div>
 				</div>
 
